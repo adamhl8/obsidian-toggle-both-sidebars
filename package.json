@@ -10,8 +10,7 @@
   "scripts": {
     "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
     "dev": "node esbuild.config.mjs",
-    "format": "prettier --write .",
-    "lint": "eslint -f pretty .",
+    "lint": "tsc --noEmit && biome check --write",
     "version": "node version-bump.mjs && git add manifest.json versions.json"
   },
   "devDependencies": {
