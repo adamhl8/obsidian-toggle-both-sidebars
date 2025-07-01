@@ -1,6 +1,6 @@
 {
+  "extends": "@adamhl8/configs/tsconfig",
   "include": ["src"],
-
   "compilerOptions": {
     "outDir": "dist",
     "target": "ESNext",
