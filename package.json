@@ -9,8 +9,11 @@
   "keywords": [],
   "scripts": {
     "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "bundle": "rm -rf ./dist && bun lint && tsc && tsc-alias",
     "dev": "node esbuild.config.mjs",
     "lint": "tsc --noEmit && biome check --write",
+    "prepare": "find .githooks -type f -exec ln -srf {} .git/hooks/ \\;",
+    "prepublishOnly": "bun bundle",
     "version": "node version-bump.mjs && git add manifest.json versions.json"
   },
   "devDependencies": {
