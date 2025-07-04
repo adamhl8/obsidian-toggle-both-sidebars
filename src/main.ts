@@ -1,7 +1,8 @@
 import { Plugin } from "obsidian"
 
+// biome-ignore lint/style/noDefaultExport: needs to be default
 export default class ToggleBothSidebars extends Plugin {
-  onload() {
+  public override onload() {
     this.addCommand({
       id: "toggle-both-sidebars",
       name: "Toggle both sidebars",

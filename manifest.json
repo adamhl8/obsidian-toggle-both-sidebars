@@ -3,9 +3,8 @@
   "name": "Toggle Both Sidebars",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
-  "description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
+  "description": "This Obsidian plugin adds a command to toggle both sidebars.",
   "author": "adamhl8",
-  "authorUrl": "https://obsidian.md",
-  "fundingUrl": "https://obsidian.md/pricing",
+  "authorUrl": "https://github.com/adamhl8",
   "isDesktopOnly": true
 }
