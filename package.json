@@ -12,7 +12,7 @@
     "prepublishOnly": "bun bundle"
   },
   "devDependencies": {
-    "@adamhl8/configs": "^0.8.3",
+    "@adamhl8/configs": "^0.8.4",
     "@biomejs/biome": "^2.0.6",
     "@types/bun": "^1.2.18",
     "@types/node": "^24.0.10",
