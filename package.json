@@ -8,7 +8,7 @@
   "scripts": {
     "bundle": "rm -rf ./dist && bun lint && bun bundle.ts",
     "lint": "tsc --noEmit && biome check --write",
-    "prepare": "find .githooks -type f -exec ln -srf {} .git/hooks/ \\;",
+    "prepare": "find .githooks -type f -exec ln -srf {} .git/hooks/ \\; || true",
     "prepublishOnly": "bun bundle"
   },
   "devDependencies": {
