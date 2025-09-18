@@ -6,8 +6,8 @@
   "author": "adamlh8",
   "license": "MIT",
   "scripts": {
-    "bundle": "rm -rf ./dist && bun lint && bun bundle.ts",
-    "lint": "tsc --noEmit && biome check --write",
+    "bundle": "bun lint && tsdown",
+    "lint": "markdown-toc -i --bullets '-' --maxdepth 3 ./README.md && tsc --noEmit && biome check --write && adamhl8-knip",
     "prepare": "find .githooks -type f -exec ln -srf {} .git/hooks/ \\; || true",
     "prepublishOnly": "bun bundle"
   },
