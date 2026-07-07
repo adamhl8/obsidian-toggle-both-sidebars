@@ -5,6 +5,7 @@ const config = tsdownConfig({
   entry: "./src/main.ts",
   platform: "node",
   format: "cjs",
+  sourcemap: false,
   outExtensions: () => ({ js: ".js" }),
   deps: { neverBundle: ["obsidian"] },
   copy: [
