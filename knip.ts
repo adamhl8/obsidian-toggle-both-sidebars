@@ -1,5 +1,5 @@
 import { knipConfig } from "@adamhl8/configs"
 
-const config = knipConfig({ entry: ["./src/main.ts"] } as const)
+const config = knipConfig({ entry: [] }, { arrays: "replace" })
 
 export default config

@@ -6,16 +6,16 @@ const config = tsdownConfig({
   platform: "node",
   format: "cjs",
   outExtensions: () => ({ js: ".js" }),
-  external: ["obsidian"],
+  deps: { neverBundle: ["obsidian"] },
   copy: [
     {
       from: "./manifest.json",
-      to: "./dist/manifest.json",
+      to: "./dist/",
     },
   ],
   unbundle: false,
   dts: false,
   attw: false,
-} as const)
+})
 
 export default defineConfig(config)

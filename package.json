@@ -1,27 +1,36 @@
 {
-  "name": "obsidian-sample-plugin",
+  "name": "obsidian-toggle-both-sidebars",
   "version": "1.0.0",
-  "type": "module",
+  "private": true,
   "description": "This Obsidian plugin adds a command to toggle both sidebars.",
-  "author": "adamlh8",
   "license": "MIT",
+  "author": {
+    "name": "Adam Langbert",
+    "email": "adamhl@pm.me",
+    "url": "https://github.com/adamhl8"
+  },
+  "type": "module",
+  "imports": {
+    "#/*": "./src/*"
+  },
   "scripts": {
-    "bundle": "bun lint && tsdown",
-    "lint": "markdown-toc -i --bullets '-' --maxdepth 3 ./README.md && ts-import-fix -w && tsc --noEmit && biome check --write && adamhl8-knip",
-    "prepare": "find .githooks -type f -exec ln -srf {} .git/hooks/ \\; || true",
-    "prepublishOnly": "bun bundle"
+    "prepare": "just prepare"
   },
   "devDependencies": {
-    "@adamhl8/configs": "^0.17.5",
-    "@arethetypeswrong/core": "^0.18.2",
-    "@biomejs/biome": "^2.2.4",
-    "@types/bun": "^1.2.23",
-    "@types/node": "^24.5.2",
-    "knip": "^5.64.1",
+    "@adamhl8/configs": "^0.36.0",
+    "@arethetypeswrong/core": "^0.18.4",
+    "@commitlint/cli": "^21.2.0",
+    "@commitlint/config-conventional": "^21.2.0",
+    "@types/node": "^26.1.0",
+    "knip": "^6.24.0",
     "markdown-toc": "^1.2.0",
-    "obsidian": "^1.8.7",
-    "publint": "^0.3.13",
-    "tsdown": "^0.15.5",
-    "typescript": "^5.9.2"
+    "obsidian": "^1.13.1",
+    "oxfmt": "^0.57.0",
+    "oxlint": "^1.72.0",
+    "oxlint-tsgolint": "^0.24.0",
+    "publint": "^0.3.21",
+    "release-it": "^20.2.1",
+    "tsdown": "^0.22.3",
+    "typescript": "^6.0.3"
   }
 }
