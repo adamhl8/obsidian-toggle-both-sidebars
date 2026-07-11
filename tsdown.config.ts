@@ -1,11 +1,10 @@
-import { tsdownConfig } from "@adamhl8/configs"
+import { tsdownBundleConfig } from "@adamhl8/configs"
 import { defineConfig } from "tsdown"
 
-const config = tsdownConfig({
+const config = tsdownBundleConfig({
   entry: "./src/main.ts",
   platform: "node",
   format: "cjs",
-  sourcemap: false,
   outExtensions: () => ({ js: ".js" }),
   deps: { neverBundle: ["obsidian"] },
   copy: [
@@ -14,9 +13,6 @@ const config = tsdownConfig({
       to: "./dist/",
     },
   ],
-  unbundle: false,
-  dts: false,
-  attw: false,
 })
 
 export default defineConfig(config)

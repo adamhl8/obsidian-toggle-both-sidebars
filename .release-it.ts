@@ -3,7 +3,7 @@ import { releaseItConfig } from "@adamhl8/configs"
 const config = releaseItConfig({
   hooks: {
     // oxlint-disable-next-line no-template-curly-in-string
-    "after:bump": ["nub version-bump.ts ${version}"],
+    "after:bump": ["bun version-bump.ts ${version}"],
   },
 })
 
