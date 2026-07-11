@@ -1,3 +1,13 @@
+## [1.1.0](https://github.com/adamhl8/obsidian-toggle-both-sidebars/compare/v1.0.1..v1.1.0) - 2026-07-11
+
+### 🚀 Features
+
+- make releases BRAT compatible ([2e7b8bd](https://github.com/adamhl8/obsidian-toggle-both-sidebars/commit/2e7b8bda1f0cb0e4db35f8e04940a8d608dfa69c) by @adamhl8)
+
+### ⚙️ Miscellaneous Tasks
+
+- cleanup project ([69c11df](https://github.com/adamhl8/obsidian-toggle-both-sidebars/commit/69c11df3896acd9f5509e397156a50b3bc8dca5b) by @adamhl8)
+
 ## [1.0.1](https://github.com/adamhl8/obsidian-toggle-both-sidebars/compare/v1.0.0..v1.0.1) - 2026-07-07
 
 ### ⚙️ Miscellaneous Tasks
