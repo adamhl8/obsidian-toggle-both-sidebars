@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/adamhl8/obsidian-toggle-both-sidebars/compare/v1.1.0..v1.1.1) - 2026-07-12
+
+### ⚙️ Miscellaneous Tasks
+
+- simplify release process ([ae6b74a](https://github.com/adamhl8/obsidian-toggle-both-sidebars/commit/ae6b74ae51aa32f8328af4d0c548df339ee913fc) by @adamhl8)
+
 ## [1.1.0](https://github.com/adamhl8/obsidian-toggle-both-sidebars/compare/v1.0.1..v1.1.0) - 2026-07-11
 
 ### 🚀 Features
