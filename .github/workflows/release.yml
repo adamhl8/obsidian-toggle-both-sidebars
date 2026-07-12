@@ -9,35 +9,3 @@ jobs:
       contents: write
     uses: adamhl8/configs/.github/workflows/release.yml@main
     secrets: inherit
-
-  publish:
-    needs: release
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v7
-        with:
-          ref: main
-          fetch-depth: 0
-
-      - name: Get release tag
-        id: tag
-        run: echo "tag=$(git describe --tags --abbrev=0)" >> "$GITHUB_OUTPUT"
-
-      - name: Set up bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: canary
-
-      - name: Install
-        run: bun install --ignore-scripts
-
-      - name: Build
-        run: bun tsdown
-
-      - name: Attach assets to release
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh release upload "${{ steps.tag.outputs.tag }}" dist/main.js dist/manifest.json --clobber
