@@ -1,3 +1,5 @@
+import bun from "bun"
+
 const rawVersion = process.argv.at(2)
 if (!rawVersion) {
   console.error("usage: version-bump <version>")
@@ -6,7 +8,7 @@ if (!rawVersion) {
 
 const version = rawVersion.replace(/^v/v, "")
 const manifestPath = "manifest.json"
-const manifest = await Bun.file(manifestPath).text()
+const manifest = await bun.file(manifestPath).text()
 const updated = manifest.replace(/(?<="version":\s*)"[^"]*"/v, `"${version}"`)
-await Bun.write(manifestPath, updated)
+await bun.write(manifestPath, updated)
 console.info(`manifest.json version -> ${version}`)
