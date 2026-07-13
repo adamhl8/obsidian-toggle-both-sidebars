@@ -1,4 +1,4 @@
-const [rawVersion] = process.argv.slice(2)
+const rawVersion = process.argv.at(2)
 if (!rawVersion) {
   console.error("usage: version-bump <version>")
   process.exit(1)

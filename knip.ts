@@ -1,5 +1,5 @@
 import { knipConfig } from "@adamhl8/configs"
 
-const config = knipConfig({ entry: [] }, { arrays: "replace" })
+const config = knipConfig()
 
 export default config
