@@ -1,3 +1,9 @@
+## [1.1.3](https://github.com/adamhl8/obsidian-toggle-both-sidebars/compare/v1.1.2..v1.1.3) - 2026-10-26
+
+### ⚙️ Miscellaneous Tasks
+
+- _(deps)_ update dependencies ([df7d68f](https://github.com/adamhl8/obsidian-toggle-both-sidebars/commit/df7d68ff3c2cda81e3fc175a36b6a09486cef22b) by @adamhl8)
+
 ## [1.1.2](https://github.com/adamhl8/obsidian-toggle-both-sidebars/compare/v1.1.1..v1.1.2) - 2026-07-13
 
 ### ⚙️ Miscellaneous Tasks
