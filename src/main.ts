@@ -1,6 +1,6 @@
 import { Plugin } from "obsidian"
 
-// oxlint-disable-next-line import/no-default-export
+// oxlint-disable-next-line import/no-default-export - Obsidian loads the plugin class from the default export
 export default class ToggleBothSidebars extends Plugin {
   public override onload() {
     this.addCommand({
